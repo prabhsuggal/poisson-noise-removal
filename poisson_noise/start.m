@@ -1,0 +1,21 @@
+x=load('blocks.txt');
+x=x+2.2*abs(min(x));
+epsilon=0.01;
+N=256;
+Nit=50;
+figure(1);
+subplot(2,1,1);
+plot(x);
+y=noise(x)+epsilon;
+subplot(2,1,2);
+plot(y);
+lam = 1.5;                         % lam: regularization parameter
+%[z]=denoise(y,lam);
+%figure;
+%subplot(2,1,1);
+%plot(z);
+%pause;
+%z = tvd_mm(y,lam,Nit);
+%figure;
+%subplot(2,1,1);
+%plot(z);
