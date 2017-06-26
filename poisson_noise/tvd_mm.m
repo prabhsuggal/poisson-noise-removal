@@ -37,5 +37,5 @@ for k = 1:Nit
     F = sparse(1:N-1, 1:N-1, abs(Dx)/lam) + DDT;       % F : Sparse banded matrix
     x = y - D'*(F\Dy);                                 % Solve banded linear system
     Dx = D*x;
-    cost(k) = 0.5*sum(abs(x-y).^2) + lam*sum(abs(Dx)); % cost function value
+   % cost(k) = 0.5*sum(abs(x-y).^2) + lam*sum(abs(Dx)); % cost function value
 end
