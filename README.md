@@ -1,2 +1,3 @@
 # poisson-noise-removal
-using l1 norm
+using L1 norm (MATLAB code is attached)
+#HappyLearning
